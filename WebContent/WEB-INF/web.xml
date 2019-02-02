@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  
+  <!-- <servlet>
+  <servlet-name>adding</servlet-name>
+  <servlet-class>co.calculator.AddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>adding</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>squaring</servlet-name>
+  <servlet-class>co.calculator.SqServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>squaring</servlet-name>
+  <url-pattern>/sq</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>myserv</servlet-name>
+  <servlet-class>Serveletconfcntxt.Myservlet</servlet-class>
+  
+  <init-param>
+  <param-name>name</param-name>
+  <param-value>Garg</param-value>
+  </init-param>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>myserv</servlet-name>
+  <url-pattern>/home</url-pattern>
+  </servlet-mapping> -->
+  
+  <context-param>
+  
+  <param-name>name</param-name>
+  
+  <param-value>Bhoomika</param-value>
+  
+  </context-param>
+  
+  <context-param>
+  
+  <param-name>designation</param-name>
+  
+  <param-value>CEO and Developer</param-value>
+  
+  </context-param>
+  
+</web-app>
