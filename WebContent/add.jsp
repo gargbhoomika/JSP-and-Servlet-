@@ -15,22 +15,27 @@
 
 <!--
 
-int i = Integer.parseInt(request.getParameter("Num1"));
-int j = Integer.parseInt(request.getParameter("Num2"));
-int k = i+j;
-int l = i/j;
-out.println("Output is: "+k);
-out.println("DIvision is: "+l); 
+	int i = Integer.parseInt(request.getParameter("Num1"));
+	int j = Integer.parseInt(request.getParameter("Num2"));
+	int k = i+j;
+	int l = i/j;
+	out.println("Output is: "+k);
+	out.println("DIvision is: "+l); 
    ${students}-->
-   
  <!--<c:forEach items="${students}" var="s">
    ${s.name}<br/>
-   </c:forEach>  -->  
-   
+   </c:forEach> 
    <c:set var="str" value="Bhoomika is a java developer"/>
+   <c:forEach items="${fn:split(str,' ')}" var="l">
+   	<br>
+   	${l}
+   </c:forEach> 
+   index : ${fn:indexOf(str,"Bhoomika")}
+   there: ${fn:contains(str,"java")}-->  
    
-   Length: "${fn:length(str)}"
-   
+   <c:if test="${fn:endsWith(str,'developer')}">
+       Java is There
+   </c:if>
    
    <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/test" user="root" password="Bhoomi13@"/> 
    <sql:query var="rs" dataSource="${db}">Select * from testtable where age=21</sql:query>
